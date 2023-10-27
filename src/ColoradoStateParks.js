@@ -1,7 +1,7 @@
 import React from "react";
 import howManyParks from "./parks/howManyParks";
 import MesaVerde from "./parks/MesaVerde";
-import * as RockMountain from "./parks/RockyMountain"
+import {trees, wildlife, elevation} from "./parks/RockyMountain"
 
 function ColoradoStateParks() {
   howManyParks(); // => "42 parks!"
@@ -10,7 +10,9 @@ function ColoradoStateParks() {
     <div>
       <h1>Colorado State Parks!</h1>
       <MesaVerde></MesaVerde>
-      <RockMountain></RockMountain>
+      <p>{trees}</p>
+      <p>{wildlife}</p>
+      <p>{elevation}</p>
     </div>
   )
 }
